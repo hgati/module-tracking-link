@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <hgati_tracking>
+            <service_url>
+                <dhl><![CDATA[http://webtrack.dhlglobalmail.com/?trackingnumber={{number}}]]></dhl>
+                <fedex><![CDATA[https://www.fedex.com/apps/fedextrack/?action=track&action=track&tracknumbers={{number}}]]></fedex>
+                <ups><![CDATA[https://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={{number}}]]></ups>
+                <usps><![CDATA[https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1={{number}}]]></usps>
+            </service_url>
+        </hgati_tracking>
+    </default>
+</config>

@@ -1,0 +1,29 @@
+{
+    "name": "hgati/module-tracking-link",
+    "description": "Extension add Tracking Url in Shipment Email.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Dennis Lee",
+            "email": "cobays@gmail.com"
+        }
+    ],
+    "license": [
+        "OSL-3.0"
+    ],
+    "require": {
+        "magento/framework": "103.0.*",
+        "magento/module-config": "101.2.*",
+        "magento/module-sales": "103.0.*",
+        "magento/module-shipping": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hgati\\TrackingLink\\": ""
+        }
+    }
+}

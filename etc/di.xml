@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- plugin -->
+    <type name="Magento\Config\Model\Config\Structure\Element\Group">
+        <plugin name="hgati_trackinglink" type="Hgati\TrackingLink\Plugin\Config\Model\Config\Structure\Element\Group"/>
+    </type>
+    <type name="Magento\Sales\Block\DataProviders\Email\Shipment\TrackingUrl">
+        <plugin name="hgati_trackinglink" type="Hgati\TrackingLink\Plugin\Sales\Block\DataProviders\Email\Shipment\TrackingUrlPlugin"/>
+    </type>
+</config>
