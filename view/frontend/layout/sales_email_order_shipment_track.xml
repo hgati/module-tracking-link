@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance dc" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceBlock name="sales.order.email.shipment.track">
+        <action method="setTemplate">
+            <argument name="template" xsi:type="string">Hgati_TrackingLink::email/shipment/track.phtml</argument>
+        </action>
+    </referenceBlock>
+</page>

@@ -38,7 +38,10 @@ class TrackingUrlPlugin
      */
     public function aroundGetUrl(TrackingUrl $subject, callable $proceed, Track $track)
     {
-        $url = $this->helper->getCarrierUrl($track->getCarrierCode(), $track->getStoreId());
+        $carrier_code = $track->getCarrierCode();
+        if($track->isCustom()) $carrier_code = str_replace(' ', '_', strtolower($track->getTitle())); // Qxpress Service to qxpress_service
+        $url = $this->helper->getCarrierUrl($carrier_code, $track->getStoreId());
+
         return $url ? str_replace('{{number}}', $track->getNumber(), $url) : $proceed($track);
     }
 }

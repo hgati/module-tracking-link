@@ -4,7 +4,7 @@
     <system>
         <section id="hgati_tracking" translate="label" type="text" sortOrder="309" showInDefault="1" showInWebsite="1" showInStore="0">
             <label>Tracking Settings</label>
-            <tab>sales</tab>
+            <tab>hgati</tab>
             <resource>Hgati_TrackingLink::tracking</resource>
             <group id="service_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
                 <label>Tracking Service Url</label>
@@ -20,6 +20,9 @@
                 <field id="usps" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>United States Postal Service</label>
                 </field>
+                <field id="qxpress" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Qxpress</label>
+                </field>                
             </group>
         </section>
     </system>
