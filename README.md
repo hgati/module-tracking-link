@@ -12,17 +12,13 @@ The extension supports all couriers which support shipping tracking.
 
 #### Install via Composer
 
-1. Go to Magento2 root folder
+```bash
+composer require hgati/module-tracking-link
 
-2. Enter following commands to install module:
-
-    ```bash
-    composer require hgati/module-tracking-link
-
-    php bin/magento setup:upgrade
-    php bin/magento setup:di:compile
-    php bin/magento setup:static-content:deploy (optional)    
-    ```
+php bin/magento setup:upgrade
+php bin/magento setup:di:compile
+php bin/magento setup:static-content:deploy (optional)    
+```
 
 ### Configuration
 
@@ -39,10 +35,8 @@ In the Magento Admin Panel go to *Stores > Configuration > Sales > Tracking Sett
 
 ## Uninstall
 
-#### Remove database data
+#### Remove extension & database data
 
-Enter following commands to remove database data:
-
-    ```bash
-    php bin/magento module:uninstall -r Hgati_TrackingLink
-    ```
+```bash
+php bin/magento module:uninstall -r Hgati_TrackingLink
+```
