@@ -13,7 +13,7 @@ The extension supports all couriers which support shipping tracking.
 #### Install via Composer (recommend)
 
     ```bash
-    composer require hgati/module-tracking-link
+    composer require hgati/module-tracking-link:dev-master
 
     php bin/magento setup:upgrade
     php bin/magento setup:di:compile
