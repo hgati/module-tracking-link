@@ -2,6 +2,9 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
+        <tab id="hgati" sortOrder="0" translate="label">
+            <label>Hgati</label>
+        </tab>        
         <section id="hgati_tracking" translate="label" type="text" sortOrder="309" showInDefault="1" showInWebsite="1" showInStore="0">
             <label>Tracking Settings</label>
             <tab>hgati</tab>
