@@ -24,7 +24,7 @@
                     <label>United States Postal Service</label>
                 </field>
                 <field id="qxpress" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
-                    <label>Qxpress</label>
+                    <label>TracX Logis</label>
                 </field>                
             </group>
         </section>
